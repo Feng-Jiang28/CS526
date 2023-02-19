@@ -114,6 +114,9 @@ namespace Gamekit2D
         //used in non alloc version of physic function
         protected ContactPoint2D[] m_ContactsBuffer = new ContactPoint2D[16];
 
+        // Time properties binding on Ellen
+        public float timer = 0.0f;
+
         // MonoBehaviour Messages - called by Unity internally.
         void Awake()
         {
@@ -179,6 +182,8 @@ namespace Gamekit2D
 
         void Update()
         {
+            timer += Time.deltaTime;
+            Debug.Log("Debug " + timer);
             if (PlayerInput.Instance.Pause.Down)
             {
                 if (!m_InPause)
@@ -197,6 +202,7 @@ namespace Gamekit2D
                     Unpause();
                 }
             }
+
         }
 
         void FixedUpdate()
