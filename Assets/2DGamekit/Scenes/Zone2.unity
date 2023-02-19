@@ -10387,7 +10387,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1701224112552872, guid: db30b6a69797544c8a2f8777aa55668f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4415398567675628, guid: db30b6a69797544c8a2f8777aa55668f, type: 3}
       propertyPath: m_RootOrder
@@ -20355,7 +20355,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.0809019, y: 1}
+    m_SensorSize: {x: 1.5783132, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -24642,6 +24642,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1828345869705366, guid: 9a2f32836e0e10248b425c273622a735, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1919611099958742, guid: 9a2f32836e0e10248b425c273622a735, type: 3}
       propertyPath: m_Name
       value: Chomper
@@ -24707,11 +24711,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114719609329687142, guid: 9a2f32836e0e10248b425c273622a735,
         type: 3}
+      propertyPath: shootingAudio
+      value: 
+      objectReference: {fileID: 1804274496}
+    - target: {fileID: 114719609329687142, guid: 9a2f32836e0e10248b425c273622a735,
+        type: 3}
       propertyPath: viewDirection
       value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a2f32836e0e10248b425c273622a735, type: 3}
+--- !u!114 &1804274496 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114843360001791158, guid: 9a2f32836e0e10248b425c273622a735,
+    type: 3}
+  m_PrefabInstance: {fileID: 1804274495}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6abcd50fdc97f3e409820b29f208d704, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1809403465
 GameObject:
   m_ObjectHideFlags: 0
